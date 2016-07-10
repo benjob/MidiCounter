@@ -1,9 +1,13 @@
+Build:
+$> mvn clean package
+
+Run:
+
 List all instruments and help:
-$> java -classpath . org.benjob.midicounter.Main --help
+$> java -jar target/midicounter-0.0.1-SNAPSHOT.jar --help
 
 Count with a specific Instrument:
-$> java -classpath . org.benjob.midicounter.Main -b <Bank> -i <InstrumentNumber
-
+$> java -jar target/midicounter-0.0.1-SNAPSHOT.jar -b <Bank> -i <InstrumentNumber
 
 Count with the default (piano):
-$> java -classpath . org.benjob.midicounter.Main
+$> java -jar target/midicounter-0.0.1-SNAPSHOT.jar
