@@ -43,7 +43,7 @@ public class Main {
 	}
 	
 	public static void main( String[] args ) throws MidiUnavailableException, InvalidMidiDataException, IOException {
-		List<String> arguments = Collections.EMPTY_LIST;
+		List<String> arguments = Collections.<String> emptyList();
 		if (args != null && args.length != 0) {
 			arguments = Arrays.asList( args );
 		}
