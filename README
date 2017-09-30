@@ -6,6 +6,9 @@ $> ./gradlew build
 
 Run:
 
+Count with the default (piano):
+$> java -jar build/libs/midicounter-0.0.1.jar
+
 List all instruments and help:
 $> java -jar build/libs/midicounter-0.0.1.jar --help
 
