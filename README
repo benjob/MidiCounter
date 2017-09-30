@@ -2,15 +2,15 @@ Inspired from this:
 https://www.youtube.com/watch?v=CdaPhpGG6As
 
 Build:
-$> mvn clean package
+$> ./gradlew build
 
 Run:
 
 List all instruments and help:
-$> java -jar target/midicounter-0.0.1-SNAPSHOT.jar --help
+$> java -jar build/libs/midicounter-0.0.1.jar --help
 
 Count with a specific Instrument:
-$> java -jar target/midicounter-0.0.1-SNAPSHOT.jar -b <Bank> -i <InstrumentNumber
+$> java -jar build/libs/midicounter-0.0.1.jar -b <Bank> -i <InstrumentNumber>
 
 Count with the default (piano):
-$> java -jar target/midicounter-0.0.1-SNAPSHOT.jar
+$> java -jar build/libs/midicounter-0.0.1.jar

@@ -1,0 +1,20 @@
+project.group = "org.benjob"
+project.version = "0.0.1"
+
+apply plugin: 'java'
+
+jar {
+    manifest {
+        attributes("Main-Class": "org.benjob.midicounter.Main")
+    }
+}
+
+task run(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+
+    main "org.benjob.midicounter.Main"
+
+    if (project.hasProperty("commandArgs")) {
+        args commandArgs.tokenize()
+    }
+}
